@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet"type="text/css"
+ href="/storage/emulated/0
+/fontawesome-free-5.15.4-web
+/fontawesome-free-5.15.4-web/css/all.css" >
+<style type="text/css">
+*{margin:0px;padding:0px;box-sizing:border-box;}
+.font{margin:0 auto;
+width:250px;
+}
+.hov{background:red;
+margin:0 auto;
+
+}
+.mm2{
+background:#f2f3f4;
+font-family:monospace;
+display:flex;
+justify-content:center;
+align-items:center;
+height:200px;
+}
+ul{display:flex;
+
+}
+li{list-style:none;
+margin:0px 15px;
+}
+
+a{color:#333;
+text-decoration:none;
+display:block;
+width:80px;
+height:40px;
+line-height:40px;
+text-align:center;
+background:#f9f9f9;
+position:relative;
+transform:rotate(-30deg) skew(25deg);
+box-shadow:-20px 20px 10px #ddd;
+transition:.5s linear;
+}
+a:hover {color:#f1f1f1;
+transform:rotate(-25deg)skew(25deg)translate(25px,-15px);
+}
+a::before{
+content:'';
+position:absolute;
+top:5px;
+left:-10px;
+background:#f2f2f2;
+width:10px;
+height:40px;
+transform:skewy(-45deg);
+transition:.5s linear;
+}
+a::after{
+content:'';
+position:absolute;
+bottom:-10px;
+right:5px;
+background:#e6e6e6;
+width:80px;
+height:10px;
+transform:skewx(-45deg);
+transition:.5s linear;
+}
+
+.fb:hover a{
+background:#1976d2;
+}
+.fb:hover a::after{
+background:#1359a0;
+}
+.fb:hover a::before{
+background:#0d4072;
+}
+.insta a:hover{
+background:#e91e63;
+}
+
+.insta:hover a::after{
+background:#8b0e38;
+}
+.insta:hover a::before{
+background:#d11553;
+}
+.twit a:hover{
+background:#1da1f2;
+}
+
+.twit:hover a:after{
+background:#085391;
+}
+.twit:hover a:before{
+background:#2196f3;
+}
+.box{
+width:300px;
+position:relative;
+perspective:1000px;
+margin:0 auto;
+box-shadow:8px 8px 16px 0px rgba(0,0,0,0.3);
+border-radius:5px;
+}
+.box .boximg{
+transform:rotateY(0deg);
+transition:all 1s ease;
+}
+.box:hover .boximg{
+transform:rotateY(-90deg);
+}
+.box .con{
+width:100%;height:100%;
+position:absolute;
+top:0;left:0;
+box-sizing:border-box;
+text-align:center;
+color:#eee;
+background:rgba(0,0,0,0.7);
+transform:rotateY(90deg);
+transition:all 0.5s ease;
+border-radius:5px;
+padding-top:40px;
+}
+.box:hover .con{
+transform:rotateY(0deg);
+transition:all 0.5s ease in out;
+}
+.box .boximg img{
+width:100%;
+height:auto;
+border-radius:5px;
+margin:0px;padding:0px;
+}
+/*fcacard*/
+section {width:100%;
+height:380px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#5a7bbf;
+}
+main {width:300px;
+height:280px;
+display:flex;
+justify-content:space-around;
+position:relative;
+}
+
+.a{width:300px;height:280px;
+filter:blur(50px);
+background:rgba(255,255,255,0.3);
+}
+nav {position:absolute;
+width:300px;
+height:280px;
+background:#1566b7;
+box-shadow:inset 2px 2px 4px rgba(0,0,0,0.1),inset -2px -2px 4px rgba(0,0,0,0.2);
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+align-items:center;
+border-radius:2px;
+
+}
+h1{color:#f9f9f9;
+margin:0px;padding:0px;
+font-size:30px;
+font-weight:bold;
+font-family:monospace;
+}
+img{border-radius:50%;
+width:80px;
+height:80px;
+}
+input ,button {
+height:30px;
+width:200px;
+border:none;
+outline:none;
+}
+input {
+background:#b5c5e3;
+}
+button {border-radius:2px;
+height:35px;
+width:210px;
+background:rgba(255,255,255,0.2);
+box-shadow:inset 2px 2px 4px rgba(255,255,255,0.2),inset -2px -2px 4px rgba(0,0,0,0.2);
+text-transform:uppercase;
+color:#f9f9f9;
+font-weight:bold;
+font-family:sans-serif;
+font-size:16px;
+letter-spacing:2px;
+}
+
+.don{
+
+position:absolute;
+top:100px;
+left:195px;
+color:red;
+}
+
+.shp::before{background:transparent;
+content:'';
+position:absolute;
+border-bottom:8px solid #e0e0e0;
+border-right:8px solid transparent;
+transform:rotate(-45deg);
+top:115px;
+left:195px;
+
+}
+</style>
+</head>
+<body>
+<div class="font" >
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-youtube"></i>
+<i class="fas fa-home"></i>
+<i class="fas fa-arrow-down"></i>
+<i class="fas fa-caret-up"></i>
+<i class="fas fa-sort-down"></i>
+<i class="fas fa-caret-left"></i>
+<i class="fas fa-caret-right"></i>
+<i class="fas fa-times"></i>
+<i class="fas fa-bars"></i>
+<i class="fas fa-dollar-sign"></i>
+<i class="fas fa-check"></i>
+<i class="fas fa-search"></i>
+<i class="fas fa-lock"></i>
+<i class="fas fa-envelope"></i>
+<i class="fas fa-envelope-open"></i>
+<i class="fas fa-user-alt"></i>
+<i class="fas fa-user-circle"></i>
+<i class="fas fa-user-plus"></i>
+<i class="fas fa-desktop"></i>
+<i class="fas fa-laptop-code"></i>
+<i class="fas fa-copyright"></i>
+<i class="far fa-copyright"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-address-card"></i>
+<i class="fas fa-globe"></i>
+<i class="fas fa-map-marker-alt"></i>
+<i class="fab fa-skype"></i>
+<i class="fas fa-pen-alt"></i>
+</div>
+<hr>
+<div class="hov" >
+
+<div class="mm2" >
+<ul>
+<li class="fb" ><a href="#" >Facebook</a></li>
+<li class="insta" ><a href="#" >Instagram</a></li>
+<li class="twit" ><a href="#" >Twitter</a></li>
+</ul>
+</div>
+</div>
+
+<div>
+<div class="box">
+<div class="boximg">
+<img src="/storage/emulated/0/2.png">
+</div>
+<div class="con">
+<h1>rotate image</h1>
+<p>this image style by musa khan</p>
+</div>
+</div>
+
+</div>
+
+
+
+<section>
+<main>
+<div class="a" ></div>
+
+
+<nav>
+<h1>facebook</h1>
+<i class="fas fa-sort-down don"></i>
+<span class="shp" ></span>
+<img src="/storage/3D2B-1416/Musa/Photo/IMG_20210803_111108.jpg" alt="profile photo" >
+<input type="password"placeholder="password" >
+<button>sing in</button>
+</nav>
+</main>
+</section>
+</body>
+</html>
